@@ -3,7 +3,7 @@ Este proyecto está protegido por derechos de autor.
 
 - **Uso permitido:** Uso privado y no comercial únicamente.
 - **Prohibiciones:**
-  - Está prohibida la distribución total o parcial del código.
+  - Está prohibida la distribución total o parcial del sotfware.
   - Está prohibido el uso con fines comerciales.
 
 Para más detalles, consulta el archivo [LICENSE](LICENSE).
@@ -57,3 +57,51 @@ Esta aplicación puede ejecutarse utilizando **Docker** o de manera manual. A co
    
 
 
+## Ejemplo de Uso de la API
+
+La documentación de la API se encuentra disponible accediendo a `http://localhost:8000/docs`, proporcionada automáticamente por **FastAPI**. Desde esta documentación interactiva, puedes probar las rutas disponibles utilizando el método **POST**.
+
+### Rutas disponibles
+
+#### 1. `user/new_user`
+**Método:** POST  
+**Ejemplo de body:**
+```json
+{
+  "dni": "XXXXXXXX",  
+  "name": "Test",  
+  "email": "test@test.com"
+}
+```
+
+#### 2. `user/get_user`
+**Método:** POST  
+**Ejemplo de body:**
+```json
+{
+  "dni": "XXXXXXXX"
+}
+```
+
+#### 3. `user/update_user`
+**Método:** POST  
+**Ejemplo de body:**
+```json
+{
+  "dni": "XXXXXXXX",  
+  "name": "Test",  
+  "email": "test@test.com"
+}
+```
+
+#### 4. `mortgage_sim/new_sim`
+**Método:** POST  
+**Ejemplo de body:**
+```json
+{
+  "dni": "XXXXXXXX",  
+  "tae": "2.5",  
+  "requested_capital": 100000,  
+  "amortization_period": 150
+}
+```

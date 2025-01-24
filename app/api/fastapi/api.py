@@ -27,17 +27,3 @@ async def handle_post(
     )
 
 
-@app.get("/{path:path}")
-async def handle_get(
-    request: Request,
-    path: str,
-    q: Optional[str] = Query(None),
-):
-    # Parsear los query parameters si están presentes
-    query_params = parse_qs(q) if q else {}
-
-    # Llama a la función que manejará la solicitud con los segmentos y parámetros
-    return await RequestHandler.funtionality_GET(
-        path=path,
-        content=query_params,
-    )
