@@ -1,0 +1,7 @@
+services:
+  fastapi_api:
+    image: fastapi_api_image
+    build: .
+    container_name: fastapi_api
+    ports:
+      - "8000:8000"
