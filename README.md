@@ -22,8 +22,8 @@ Esta aplicación puede ejecutarse utilizando **Docker** o de manera manual. A co
 ### Pasos
 1. Clona el repositorio:
    ```bash
-   git clone [URL_DEL_REPOSITORIO]
-   cd [NOMBRE_DEL_REPOSITORIO]
+   git clone git clone https://github.com/albtena/roams.git
+   cd roams
    ```
 2. Construye los contenedores de Docker:
    ```bash
